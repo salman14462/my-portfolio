@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="...">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>My Portfolio</title>
+    <style>
+        body{
+            background-image: url(file.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            
+        }
+        .About h1{
+            text-align: center;
+        }
+        .Contact h1{
+            text-align: center;
+        }
+        .Contact h2{
+            text-align: center;
+        }
+        .Social{
+            text-align: center;
+        }
+        .info{
+            text-align: center;
+        }
+        .mt-2{
+            color: black;
+        }
+       
+    </style>
+</head>
+<body>
+      <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home"><i class="fa fa fa-home" >Home</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about"><i class=" fa fa-fw fa-info" ></i>About Us</li></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects"><i class="fa fa-paper-plane" aria-hidden="true">Projects</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><i class="fa fa-phone-square" aria-hidden="true">Contacts</i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+ <!-- header -->
+<header id="home" class="text-center py-5">
+    <div class="container">
+        <img src="profile.jpg" alt="Your Name" class="img-fluid rounded-circle" width="150">
+        <h1>Hi, I'm Muhammad Salman</h1>
+        <p>Software Engineer</p>
+    </div>
+</header>
+<!--skill-->
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>CCN</li>
+                    <li>Operating System</li>
+                    <li>C++</li>
+                    <li>Data Base</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Tools</h4>
+                <ul>
+                    <li>VS Code</li>
+                    <li>Bootstrap</li>
+                    <li>Git</li>
+                    <li>Cisco Packet Tracer</li>
+                    <li>Ubanto</li>
+                    <li>Code Block</li>
+                    <li>MY SQL</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+</section>
+ <!--project-->
+<section  id="projects"  >
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="card">
+                    <img src="cisco.png" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <h5>Collage Management System on CISCO</h5>
+                        <p class="card-text">I developed a collage management system on cisco that describe who the whole system is inter connect with each othre.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+            <br><br>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card">
+                        <img src="collage.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <h5>Registration System of Student DataBase </h5>
+                            <p class="card-text">In which we create a database of student and connect over database through php and python coding apply on it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <br>
+        
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                            <img src="Capture.PNG" class="card-img-top" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Project 3</h5>
+                                <h5>Shopping Website through HTML/CSS</h5>
+                                <p class="card-text">Creating a simple website using html css and bootsrap. apply animation and other content</p>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</section>
+<!--about-->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Hy,I am Muhammad Salman 
+            <br> I am student of Software Engineering in Ziauddin University (ZUFESTM).It,s my Portfolio where I describe my Skills
+            <br>  Tools that  work on it and  show my some Projects that I have been worked on it.If you have quairy contact me
+        </p>
+    </div>
+</section>
+<!--conatct-->
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2>Contact</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="Contact">
+        <h1>Contact Us</h1>
+        <h2 style="font-family: Arial, Helvetica, sans-serif; text-decoration: solid;">Follow Us On Social Media:</h2>
+        <div class="info">
+        <ul>
+            <li><i class="fa fa-location-arrow" aria-hidden="true"></i>
+                <span>Karachi, Sindh, Pakistan</span>
+            </li><br>
+            <li><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span>salman@gmail.com</span>
+            </li><br>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+923361234567</span>
+            </li><br>
+        </ul>
+    </div>
+   
+</section>
+<!--footer-->
+
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container1">
+        &copy; 2023 salman. All Rights Reserved.
+        <div class="mt-2">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa fa-fw fa-facebook-official"></i></a>
+            <a href="https://instagram.com/ch_salman_arain?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa fa-fw fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fa fa-fw fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-salman-4075b1272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a>
+        </div>
+    </div>
+</footer>
+
+    <!-- Your content goes here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="..."></script>
+   
+</body>
+</html>
